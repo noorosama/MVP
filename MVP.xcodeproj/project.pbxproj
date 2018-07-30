@@ -70,13 +70,9 @@
 		192B851B210EF713003301ED /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				192B8539210F17E0003301ED /* Summary */,
-				192B8532210EF786003301ED /* Main */,
-				192B851C210EF713003301ED /* AppDelegate.swift */,
-				192B8520210EF713003301ED /* Main.storyboard */,
-				192B8523210EF713003301ED /* Assets.xcassets */,
-				192B8525210EF713003301ED /* LaunchScreen.storyboard */,
-				192B8528210EF713003301ED /* Info.plist */,
+				192B8543210F9017003301ED /* Application */,
+				192B8542210F9008003301ED /* Scenes */,
+				192B8546210F90F2003301ED /* Supporting Files */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -102,6 +98,51 @@
 				192B8540210F8A7D003301ED /* SummaryRouter.swift */,
 			);
 			path = Summary;
+			sourceTree = "<group>";
+		};
+		192B8542210F9008003301ED /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				192B8532210EF786003301ED /* Main */,
+				192B8539210F17E0003301ED /* Summary */,
+				192B8545210F909E003301ED /* Launch */,
+				192B8544210F905C003301ED /* Base.lproj */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		192B8543210F9017003301ED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				192B851C210EF713003301ED /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		192B8544210F905C003301ED /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				192B8520210EF713003301ED /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		192B8545210F909E003301ED /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				192B8525210EF713003301ED /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		192B8546210F90F2003301ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				192B8528210EF713003301ED /* Info.plist */,
+				192B8523210EF713003301ED /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVP/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nour.MVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVP/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nour.MVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
